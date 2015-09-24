@@ -111,6 +111,7 @@ var brokenAuthHeaderProviders = []string{
 	"https://user.gini.net/",
 	"https://api.netatmo.net/",
 	"https://login.mailchimp.com/",
+	"https://api.createsend.com/",
 }
 
 // providerAuthHeaderWorks reports whether the OAuth2 server identified by the tokenURL
