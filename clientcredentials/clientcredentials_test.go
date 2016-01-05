@@ -10,7 +10,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"golang.org/x/oauth2"
+	"github.com/eagerio/oauth2"
 )
 
 func newConf(url string) *Config {

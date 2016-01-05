@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"log"
 
-	"golang.org/x/oauth2"
+	"github.com/eagerio/oauth2"
 )
 
 func ExampleConfig() {

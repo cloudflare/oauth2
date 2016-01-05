@@ -9,7 +9,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"golang.org/x/oauth2"
+	"github.com/eagerio/oauth2"
 )
 
 var dummyPrivateKey = []byte(`-----BEGIN RSA PRIVATE KEY-----
