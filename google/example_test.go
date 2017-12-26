@@ -12,9 +12,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/eagerio/oauth2"
-	"github.com/eagerio/oauth2/google"
-	"github.com/eagerio/oauth2/jwt"
+	"github.com/cloudflare/oauth2"
+	"github.com/cloudflare/oauth2/google"
+	"github.com/cloudflare/oauth2/jwt"
 	"google.golang.org/appengine"
 	"google.golang.org/appengine/urlfetch"
 )

@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"golang.org/x/net/context"
-	"github.com/eagerio/oauth2"
+	"github.com/cloudflare/oauth2"
 )
 
 // Set at init time by appengine_hook.go. If nil, we're not on App Engine.

@@ -5,8 +5,8 @@
 package jwt_test
 
 import (
-	"github.com/eagerio/oauth2"
-	"github.com/eagerio/oauth2/jwt"
+	"github.com/cloudflare/oauth2"
+	"github.com/cloudflare/oauth2/jwt"
 )
 
 func ExampleJWTConfig() {

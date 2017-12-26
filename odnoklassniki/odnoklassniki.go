@@ -3,10 +3,10 @@
 // license that can be found in the LICENSE file.
 
 // Package odnoklassniki provides constants for using OAuth2 to access Odnoklassniki.
-package odnoklassniki // import "github.com/eagerio/oauth2/odnoklassniki"
+package odnoklassniki // import "github.com/cloudflare/oauth2/odnoklassniki"
 
 import (
-	"github.com/eagerio/oauth2"
+	"github.com/cloudflare/oauth2"
 )
 
 // Endpoint is Odnoklassniki's OAuth 2.0 endpoint.

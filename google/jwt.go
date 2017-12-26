@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/eagerio/oauth2"
-	"github.com/eagerio/oauth2/internal"
-	"github.com/eagerio/oauth2/jws"
+	"github.com/cloudflare/oauth2"
+	"github.com/cloudflare/oauth2/internal"
+	"github.com/cloudflare/oauth2/jws"
 )
 
 // JWTAccessTokenSourceFromJSON uses a Google Developers service account JSON

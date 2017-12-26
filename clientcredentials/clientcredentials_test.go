@@ -10,7 +10,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/eagerio/oauth2"
+	"github.com/cloudflare/oauth2"
 )
 
 func newConf(url string) *Config {

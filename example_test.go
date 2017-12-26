@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/eagerio/oauth2"
+	"github.com/cloudflare/oauth2"
 )
 
 func ExampleConfig() {

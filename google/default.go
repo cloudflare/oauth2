@@ -15,8 +15,8 @@ import (
 	"runtime"
 
 	"golang.org/x/net/context"
-	"github.com/eagerio/oauth2"
-	"github.com/eagerio/oauth2/jwt"
+	"github.com/cloudflare/oauth2"
+	"github.com/cloudflare/oauth2/jwt"
 	"google.golang.org/cloud/compute/metadata"
 )
 

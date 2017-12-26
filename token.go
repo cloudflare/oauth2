@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/eagerio/oauth2/internal"
+	"github.com/cloudflare/oauth2/internal"
 	"golang.org/x/net/context"
 )
 
