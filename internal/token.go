@@ -113,6 +113,7 @@ var brokenAuthHeaderProviders = []string{
 	"https://login.mailchimp.com/",
 	"https://api.createsend.com/",
 	"https://disqus.com/",
+	"https://slack.com/",
 }
 
 // providerAuthHeaderWorks reports whether the OAuth2 server identified by the tokenURL
