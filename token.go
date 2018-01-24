@@ -19,6 +19,10 @@ import (
 // expirations due to client-server time mismatches.
 const expiryDelta = 10 * time.Second
 
+// These are the fields which we normally expect to be in a token,
+// so we don't include them with requests for the Extra fields.
+var standardTokenFields = []string{"access_token", "token_type", "refresh_token", "expires_in", "expires"}
+
 // Token represents the crendentials used to authorize
 // the requests to access protected resources on the OAuth 2.0
 // provider's backend.
@@ -100,6 +104,39 @@ func (t *Token) Extra(key string) interface{} {
 		return raw[key]
 	}
 	return nil
+}
+
+// Return all extra fields which were returned with the access token.
+// This will not include the fields which are already extracted into other fields in
+// the token.
+func (t *Token) ExtraAsMap() map[string]interface{} {
+	// The extra fields in a token ('Raw') can be either a map or URL values depending on the
+	// encoding of the token.
+
+	extra := make(map[string]interface{})
+
+	asValues, ok := t.raw.(url.Values)
+	if ok {
+		for key, values := range asValues {
+			extra[key] = values[0]
+		}
+	} else {
+		asMap, ok := t.raw.(map[string]interface{})
+		if ok {
+			extra = asMap
+		}
+	}
+
+	for key := range extra {
+		for _, field := range standardTokenFields {
+			if field == key {
+				delete(extra, key)
+				break
+			}
+		}
+	}
+
+	return extra
 }
 
 // expired reports whether the token is expired.
